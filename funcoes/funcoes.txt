@@ -1,0 +1,23 @@
+
+Em Python tem-se 2 tipos de parâmetros das funções:
+
+- Parâmentro Posicional (ou seja, segue a ordem da posição)
+- Parâmentro Nomeado    (ou, para bular a ordem, você nomeia ele e atribui o valor)
+
+>> argumentos são passados para os parâmetros.
+>> uma função retorna apenas 1 coisa: um dicionário, uma lista, um set .....
+
+Se eu usar: 
+*args vai gerar uma Tupla (Tuple)
+**kwargs vai gerar um Dicionário (Dictionary)
+
+
+DECORATOR
+
+- Serve para o REUSO de funcionalidades, como a Herança e a Composição também são.
+
+
+
+
+
+

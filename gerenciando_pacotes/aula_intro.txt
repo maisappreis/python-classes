@@ -1,0 +1,22 @@
+
+- Indexador de Pacotes do Python - Python Package Index - www.pypi.org
+- Baixar bibliotecas.
+- Pacotes de terceiros para usar com o Python.
+
+- pip freeze é tipo o package.json do JavaScript.
+
+> pip --version
+> pip3 help
+> pip3 list
+
+
+Django
+> pip3 install Django
+> python -c (executa um trecho de código dentro de uma string)
+> python -c "import sys; print(sys.path)" (diretório aonde o pacote foi instalado)
+> python -c 'import sys; print(sys.path)'
+
+
+
+Para saber se as instalações ficam na pasta, ou se ficam localmente.
+> python -m site (Em que locais ele procura estes pacotes instalados.)

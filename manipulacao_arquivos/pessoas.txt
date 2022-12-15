@@ -1,0 +1,7 @@
+Nome: Maisa, Idade: 28
+Nome: Joao, Idade: 12
+Nome: Pedro, Idade: 45
+Nome: Renan, Idade: 35
+Nome: Bia, Idade: 47
+Nome: Liz, Idade: 2
+Nome: Vitor, Idade: 18
