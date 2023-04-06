@@ -4,6 +4,7 @@
 
 # Usando While Infinito.
 
+
 def fibonacci():
     penultimo = 0
     ultimo = 1
