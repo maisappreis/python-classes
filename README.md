@@ -12,7 +12,7 @@
 - Control structures
 - Object-oriented programming
 - Functional programming
-- Virtual enviroment
+- Virtual environment
 - Manage packages
 - Functions
 - Pip
