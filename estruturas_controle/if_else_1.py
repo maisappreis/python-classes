@@ -1,6 +1,4 @@
 
-
-
 def nota_conteito(valor):
     nota = float(valor)
 

@@ -15,4 +15,4 @@ if __name__ == '__main__':
         print(f'{idade}: {faixa_etaria(idade)}')
 
 
-# outra opção > for idade in (17, 23, 54, 68, 103)
+# outra opção > for idade in (17, 23, 54, 68, 103):

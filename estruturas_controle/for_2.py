@@ -1,3 +1,12 @@
+# FOR
+# Aplicando o FOR com: strings, listas, tuplas e sets
+
+# A diferença entre usar enumerate() e não usá-lo está na capacidade de obter
+# tanto o valor quanto a posição do elemento durante a iteração. Ou seja, o enumerate() dá acesso ao index.
+
+# Sobre o SET
+# Pode ser escrito assim: {1, 2, 3, 4, 5, 6}
+# Ou assim: set(1, 2, 3, 4, 5, 6)
 
 palavra = 'paralelepipedo'
 
@@ -24,4 +33,4 @@ for numero in {1, 2, 3, 4, 5, 6}: # isso é um set, também pode ser escrito ass
     print(numero)
 
 
-# Assim, vemos que é possível percorrer listas, tuplas e sets
+# Assim, vemos que é possível percorrer strings, listas, tuplas e sets

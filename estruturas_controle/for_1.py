@@ -1,10 +1,11 @@
+# FOR
+# Aplicando o FOR em intervalos com o range()
 
-
-for i in range(1, 11): # isso é, de 1 a 10
+for i in range(1, 11): # intervalo de 1 a 10
     print('i = {}'.format(i))
 
 
-for j in range(10): # no caso aqui, vai iniciar em 0 e acabar em 9 (10 repets)
+for j in range(10): # intervalo de 0 a 9 - (10 repets)
     print(f'i = {j}')
 
 

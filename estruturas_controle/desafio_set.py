@@ -1,3 +1,5 @@
+# SET
+
 PALAVRAS_PROIBIDAS = {'futebol', 'religião', 'politica'} # set
 textos = [
     'Joao gosta de futebol e politica',
@@ -10,7 +12,7 @@ textos = [
 
 for texto in textos:
     intersecao = PALAVRAS_PROIBIDAS.intersection(set(texto.lower().split()))
-    if intersecao: # se retornar vazio, vai no 'False', e vai para 'else'.
+    if intersecao: # se retornar vazio, vai ser 'False', e cai no 'else'.
         print('Texto possui palavras proibidas:', intersecao)
     else:
         print('Texto autorizado:', texto)

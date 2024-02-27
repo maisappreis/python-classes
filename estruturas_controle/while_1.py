@@ -1,7 +1,7 @@
-from random import randint # vai 'sortear' um número inteiro aleatório
+from random import randint
 
 numero_informado = -1 # aqui o ideal é colocar um número que está fora do intervalo do número sorteado.
-numero_secreto = randint(0, 9)
+numero_secreto = randint(0, 9)  # vai 'sortear' um número inteiro aleatório entre 0 e 9.
 
 
 # Enquanto a afirmação do 'while' for 'true' haverá uma quantidade indeterminada de repetições.

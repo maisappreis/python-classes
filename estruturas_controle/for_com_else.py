@@ -1,4 +1,4 @@
-# Bons costumes do Python é criar constantes com letras maiusculas.
+# Um bom costume do Python é criar constantes com letras maiusculas.
 
 PALAVRAS_PROIBIDAS = ('futebol', 'religião', 'politica') # tupla
 textos = [

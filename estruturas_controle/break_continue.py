@@ -1,15 +1,14 @@
 
-# o CONTINUE interrompe prematuramente a iteração, para ir para a próxima iteração.
-# ele interronpe o FOR, e não o IF, pq ele está associado a repetição.
+# CONTINUE e BREAK
+
+# CONTINUE: pula para o próximo elemento do FOR
+# BREAK: interrompe completamente o FOR, quebra o looping
 
 
 for x in range(1, 11):
     if x % 2 == 0:
         continue 
     print(x)
-
-
-# Já o BREAK ele sai do laço.
 
 
 for x in range(1, 11):
