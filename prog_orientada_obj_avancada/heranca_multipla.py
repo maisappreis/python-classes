@@ -1,6 +1,6 @@
 
 # Herança Multipla.
-# Quando uma Classe Filho/Subclasse hera atributos de outras classes Pai, de mais de uma.
+# Quando uma Classe Filho/Subclasse herda atributos de outras classes, de mais de uma.
 # Exemplo aqui: Homem Aranha, porque herda atributos da classe Homem e da classe Aranhã, as quais ambas herdam da classe Animal.
 
 
@@ -22,7 +22,7 @@ class Aranha(Animal):
         return super().capacidades + ('fazer teia', 'andar pelas paredes')
 
 
-class HomemAranha(Homem, Aranha):
+class HomemAranha(Homem, Aranha): # Herança Múltipla.
     @property
     def capacidades(self): # Aqui, 'super().capacidades' está puxando os atributos de Homem e de Aranha.
         return super().capacidades + \

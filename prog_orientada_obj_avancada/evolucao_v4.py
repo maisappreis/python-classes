@@ -1,6 +1,7 @@
 
 # Propriedades
 # Não mais usando Get and Set, mas sim o decorator @property e @nome.setter
+# property: decorator disponível no __builtins__ para transformar um método em uma propriedade
 
 class Humano:
     especie = 'Homo Sapiens' # este atributo pertence a Classe. Ele irá para as Instâncias/Objetos apenas se passado no construtor: def __init__(self)

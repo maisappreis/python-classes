@@ -1,9 +1,11 @@
 
 # Mixins para Herança Multipla: Classes que surgem da mistura de outras classes.
+# É uma técnica de reuso de código, que inclui determinados comportamos em uma classe, que pode ser aplicado via herança múltipla.
+# Como prática, os mixins devem herdar diretamente de object, evitando assim o aumento de complexidade.
 
 
 class HtmlToStringMixin:
-    def __str__(self):
+    def __str__(self): #  __str__() convertendo para HTML
         html = super().__str__() \
             .replace('(', '<string>(') \
             .replace(')', ')</strong>')
@@ -27,7 +29,9 @@ class Animal:
         return self.nome + ' (pet)' if self.pet else ''
 
 
-class PessoaHtml(HtmlToStringMixin, Pessoa): # Classes que surgem da mistura de outras classes.
+#Criação das classes com uso do mixin
+
+class PessoaHtml(HtmlToStringMixin, Pessoa): # Mixin: Classes que surgem da mistura de outras classes. É uma Herança Múltipla.
     pass
 
 

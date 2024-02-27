@@ -1,6 +1,8 @@
 # Em Python temos:
 #   Método de Classe - classe como primeiro parâmetro (@classmethod)
+#       decorator disponível no __builtins__ para transformar um método em método de classe
 #   Método de Instância - 'self' como primeiro parâmetro, pois 'self' indica a instância atual.
+#       decorator isponível no __builtins__ para transformar um método em método estático
 #   Método Estático - nenhum parâmentro (@staticmethod) | É como se fosse um método qqr que poderia estar fora do bloco Class.
 
 class Humano:

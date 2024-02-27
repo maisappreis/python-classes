@@ -18,11 +18,11 @@ class Humano:
         raise NotImplementedError('Propriedade não implementada.')
 
     @property
-    def idade(self): # lê/pega um dado. Nessa situação pode ter o mesmo nome.
+    def idade(self): # lê/pega um dado (GET). Nessa situação pode ter o mesmo nome.
         return self._idade
 
     @idade.setter
-    def idade(self, idade): # altera/configura um dado. Validação. Nessa situação pode ter o mesmo nome.
+    def idade(self, idade): # altera/configura um dado (SET). Validação. Nessa situação pode ter o mesmo nome.
         if idade < 0:
             raise ValueError('Idade deve ser um número positivo!')
         self._idade = idade

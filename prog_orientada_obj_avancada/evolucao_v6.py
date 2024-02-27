@@ -1,6 +1,8 @@
 
 # Classe Abstrata
 # Usando 'ABCMeta' e '@abstractproperty'
+# ABC: Abstract Base Class
+# abstractproperty: decorator disponível no módulo abc para transformar uma propriedade em abstrata;
 
 from abc import ABCMeta, abstractproperty
 
@@ -17,18 +19,18 @@ class Humano(metaclass=ABCMeta): # Isso faz com que a classe Humano passe a ser 
         pass
 
     @property
-    def idade(self): # lê/pega um dado. Nessa situação pode ter o mesmo nome.
+    def idade(self): # lê/pega um dado (GET). Nessa situação pode ter o mesmo nome.
         return self._idade
 
     @idade.setter
-    def idade(self, idade): # altera/configura um dado. Validação. Nessa situação pode ter o mesmo nome.
+    def idade(self, idade): # altera/configura um dado (SET). Validação. Nessa situação pode ter o mesmo nome.
         if idade < 0:
             raise ValueError('Idade deve ser um número positivo!')
         self._idade = idade
 
     def das_cavernas(self): # atributo de Instância/Objeto.
-        self.especie = 'Homo Neanderthalensis' # aqui tmb é 'especie', este atributo prevalece em relação ao atributo de Classe da linha 3.
-        return self # dai consigo encadear a chamada do método na linha 15.
+        self.especie = 'Homo Neanderthalensis' # aqui tmb é 'especie', este atributo prevalece em relação ao atributo de Classe.
+        return self # consigo encadear a chamada do método das_cavernas()
 
     @staticmethod
     def especies(): #   Método Estático
