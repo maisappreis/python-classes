@@ -1,8 +1,12 @@
-# Sequencia de Fibonacci
+# Sequência de Fibonacci
 # 0, 1, 1, 2, 3, 5, 8, 13, 21.....
 
 
-# Agora usando o FOR ao inves de WHILE.
+# Agora usando o FOR ao invés de WHILE.
+
+# _ sozinho é variável não usada
+# _variable é uma variável privada
+# VARIABLE com letras maiúsculas é uma constante
 
 
 def fibonacci(quantidade):

@@ -1,5 +1,5 @@
 
-# Agora usando operador ternário.
+# Agora usando operador ternário, IF e ELSE.
 # Aquela '\' é apenas para quebrar a linha.
 
 
