@@ -1,7 +1,9 @@
-# Cria listas de uma forma muito mais concisa e rápida.
+# Dict Comprehension
+
+# Cria dicionários de uma forma muito mais concisa e rápida.
 # Conciso é algo que está resumido ao essencial, que é sucinto e preciso.
 
-# Agora criando Dicionario ao inves de Lista
+# Agora criando Dicionário ao invés de Lista
 # [ chave: expressão for item in list if condicional ]
 
 
