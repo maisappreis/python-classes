@@ -15,5 +15,5 @@ if __name__ == '__main__':
 
 
 # NO TERMINAL
-# dentro de '>cd fundamentos_projetos'
-# >python area_circulo_v9.py
+# dentro de '> cd fundamentos_projetos'
+# > python area_circulo_v9.py

@@ -3,8 +3,6 @@
 - Baixar bibliotecas.
 - Pacotes de terceiros para usar com o Python.
 
-- pip freeze é tipo o package.json do JavaScript.
-
 > pip --version
 > pip3 help
 > pip3 list

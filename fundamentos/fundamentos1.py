@@ -1,5 +1,5 @@
 #%%----------------------------------------------------------------
-# Para que apontar erros referente ao pip8: file > preferences > settings > 'flake8' > marca a caixa.
+# Para apontar erros referente ao pip8: file > preferences > settings > 'flake8' > marca a caixa.
 # Normalmente cada sentença de código fica em uma linha. Não se usa ;
 
 from re import X
@@ -12,12 +12,12 @@ print("String com aspas duplas")
 print('String aspas simples')
 print('Você é ' + 3 * ' muito' + ' legal')
 # print(3 + '3') => erro
-print([1, 2, 3]) # chamado de lista, é semelhante ao Array, mas é dinâmico, como em JavaScript.
+print([1, 2, 3]) # chamado de lista, é semelhante ao Array, é dinâmico, como em JavaScript.
 print({'nome': 'Pedro', 'idade': 22}) # chamado de dicionário, é semelhante ao Objeto de JavaScript, estrutura chave e valor.
 print(None)
 
 #%%----------------------------------------------------------------
-# Variáveis - Tipagem dinâmica e fortemene tipada, apesar de eu não falar o tipo, ele sabe.
+# Variáveis - Tipagem dinâmica e fortemente tipada, apesar de eu não falar o tipo, ele sabe.
 # variável também é chamada de identificador.
 
 a = 10
@@ -54,7 +54,7 @@ percentual_comprometido = (despesas * 100) / salario
 print(percentual_comprometido)
 
 #%%----------------------------------------------------------------
-# Operadores Relacionais
+# Operadores Relacionais (de Comparação)
 
 print(3 >= 4)
 print(3 == 3) # não existe operador de estritamente igual em Python '===' 

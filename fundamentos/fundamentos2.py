@@ -1,5 +1,5 @@
 #%%----------------------------------------------------------------
-print('--------------------- Conversao de tipos ----------------------')
+print('--------------------- Conversão de tipos ----------------------')
 # Conversão de tipos
 # Nem toda convesão é possível de ser feita, não dá pra transfomar uma frase tipo string em um número.
 
@@ -17,7 +17,7 @@ print(a + int(b)) # converteu string para número inteiro
 print(str(a) + b) # converteu número para string
 
 #%%----------------------------------------------------------------
-print('--------------------- Coercao Automatica ----------------------')
+print('--------------------- Coerção Automática ----------------------')
 # Coerção Automática
 # São conversões implicitas, feitas pelo Python
 
@@ -26,7 +26,7 @@ print(type(10 // 3)) # Int
 print(type(10 // 3.3)) # Float
 
 #%%------------------------------
-print('--------------------- Tipos Numericos ----------------------')
+print('--------------------- Tipos Numéricos ----------------------')
 # Tipos Numéricos
 
 dir(int) #mostra tudo que tem dentro de 'int' para ser usado.
@@ -36,7 +36,7 @@ a = 5
 b = 2.5
 
 print(b.is_integer()) # false
-print(5.0.is_integer()) # true, é um float, porque tem ponto, mas é um inteiro pq as casas decimais estão zeradas.
+print(5.0.is_integer()) # true, tem ponto, mas é um inteiro pq as casas decimais estão zeradas.
 
 dir(int)
 print(int.__add__(2, 5)) # outra forma de somar.
@@ -79,29 +79,29 @@ print(doc2) # com aspas simples
 
 sobrenome = 'Pierini'
 
-print(sobrenome[0])
-print(sobrenome[5])
-print(sobrenome[-3]) # contagem de tras para frente, inicia em -1 -2 -3 4 ....
-print(sobrenome[:4]) # acessa intervalo de 0 a 3
-print(sobrenome[4:]) # acessa intervalo de 4 até o final
-print(sobrenome[-4:]) # acessa de tras pra frente
-print(sobrenome[2:5]) # acessa de 2 a 4
+print(sobrenome[0]) # P
+print(sobrenome[5]) # n
+print(sobrenome[-3]) # i ->> contagem de trás para frente, inicia em -1 -2 -3 -4 ....
+print(sobrenome[:4]) # Pier ->> acessa intervalo de 0 a 3
+print(sobrenome[4:]) # ini ->> acessa intervalo de 4 até o final
+print(sobrenome[-4:]) # rini ->> acessa de tras pra frente, pegou as 4 últimas
+print(sobrenome[2:5]) # eri ->> acessa de 2 a 4
 
 numeros = '1234567890'
-print(numeros[::]) # acessa tudo
-print(numeros[::2]) # acessa um, pula, acessa outro, pula, de 2 em 2 (pegou números ímpares)
-print(numeros[1::2]) # iniciou pelo um, pula, acessa outro, pula, de 2 em 2 (pegou números pares)
-print(numeros[::-1]) # inverteu a string
+print(numeros[::]) # 1234567890 >> acessa tudo
+print(numeros[::2]) # 13579 >> pula de 2 em 2 (pegou números ímpares)
+print(numeros[1::2]) # 24680 >> pula de 2 em 2 (pegou números pares)
+print(numeros[::-1]) # 0987654321 >> inverteu a string
 
 frase = 'Python eh demais'
-print('py' in frase) # false, porque tem diferenciação entre letra maiusculas e minusculas.
+print('py' in frase) # false, porque tem diferenciação entre letras maiusculas e minusculas.
 print('py' in frase.lower()) # true
 print('dem' in frase) # true
 
-print(len(frase)) # conta caracteres, isso inclui os espaços
-print(frase.lower())
-print(frase.upper())
-print(frase.split()) # quebra a frase entre os espaços
+print(len(frase)) # 16 >> conta caracteres, isso inclui os espaços
+print(frase.lower()) # python eh demais
+print(frase.upper()) # PYTHON EH DEMAIS
+print(frase.split()) # ['Python', 'eh', 'demais'] >> quebra a frase entre os espaços
 
 dir(str)
 # help(str.center) # ele diz exatamente o que faz a função centrer
@@ -109,13 +109,16 @@ dir(str)
 w = '123'
 q = ' da Silva'
 
+# 3 formas de concatenar strings
 print(w + q)
 print(w.__add__(q)) # funcionalidade __add__
 print(str.__add__(w, q))
 
+# 2 formas de contar o comprimento
 print(len(w)) # desta forma é mais alto nível
 print(w.__len__()) # funcionalidade __len__
 
+# 2 formas de saber se está contido em
 print('1' in w)  # desta forma é mais alto nível
 print(w.__contains__('1')) # funcionalidade __contains__
 
@@ -128,7 +131,7 @@ print('--------------------- Listas (arrays) ----------------------')
 # é dinâmico, é heterogênio, pode mudar de tamanho, pode misturar string, number, boolean (assim como em JavaScript)
 
 lista = []
-print(type(lista)) # list
+print(type(lista)) # <class 'list'>
 
 dir(lista)
 # help(list) # mostra as informações
@@ -136,21 +139,21 @@ dir(lista)
 lista.append(1) # adiciona novos elementos na lista
 lista.append(5)
 lista.append([1, 8, 7])
-print(lista)
+print(lista) # [1, 5, [1, 8, 7]]
 
 nova_lista = ["Ana", 1, 3, "Bia"] # heterogênia, mas não é recomendado fazer isso como uma boa prática.
 nova_lista.remove(3)
-print(nova_lista)
+print(nova_lista) # ['Ana', 1, 'Bia']
 
 nova_lista.reverse() # reverte a ordem
-print(nova_lista) 
+print(nova_lista) # ['Bia', 1, 'Ana']
 
 lista_2 = [1, 9, 'uva', 5, 'abacate', 5.54]
 
-print(lista_2.index('uva')) # retorna o indice
-print(lista_2[2])
-print('uva' in lista_2) # true
-print(lista_2[-1]) # pega o ultimo elemento
+print(lista_2.index('uva')) # 2 >> retorna o indice
+print(lista_2[2]) # uva >> retorna elemento da posição 2
+print('uva' in lista_2) # True
+print(lista_2[-1]) # 5.54 >> pega o ultimo elemento
 
 lista_3 = ['ana', 'rui', 'bia', 'liz', 'gabi', 'lia']
 
@@ -173,22 +176,26 @@ print('--------------------- Tuplas ----------------------')
 tupla = tuple()
 tupla = ()
 
-print(type(tupla))
+print(type(tupla)) # <class 'tuple'>
 dir(tupla)
 # help(tupla)
 
-tupla = ('um') # tipo string
-tupla = ('um', ) # tipo tuple
-tupla[0] # também é uma estrutura indexada, pode-se acessar os indices dela
+tupla_x = ('um') # tipo string <class 'str'>
+tupla_x[0]
+print('x', type(tupla_x), tupla_x[0]) # x <class 'str'> u
+
+tupla_y = ('um', ) # tipo tuple <class 'tuple'>
+tupla_y[0] # também é uma estrutura indexada, pode-se acessar os indices dela
+print('y', type(tupla_y), tupla_y[0]) # y <class 'tuple'> um
 
 cores = ('verde', 'azul', 'amarelo', 'azul', 'preto', 'azul')
 print(cores[0])
 print(cores[-1])
 print(cores[1:])
 
-print(cores.index('amarelo')) # dá o index do elemento
-print(cores.count('azul')) # conta elementos
-print(len(cores)) # conta elementos
+print(cores.index('amarelo')) # 2 >> dá o index do elemento
+print(cores.count('azul')) # 3 >> conta elementos
+print(len(cores)) # 6 >> conta elementos
 
 #%%------------------------------
 print('--------------------- Dicionario (objeto) ----------------------')
@@ -202,19 +209,19 @@ pessoa = {
     'cursos': ['Ingles', 'Portugues']
 }
 
-print(type(pessoa)) # retorna 'dict' de dictionary
+print(type(pessoa)) # <class 'dict'>
 dir(dict)
 
-print(len(pessoa)) # retorna quantidade de elementos
+print(len(pessoa)) # 3 >> retorna quantidade de elementos
 print(pessoa)
 print(pessoa['nome'])
 print(pessoa['idade'])
 print(pessoa['cursos'])
 print(pessoa['cursos'][1])
 
-print(pessoa.keys())
-print(pessoa.values())
-print(pessoa.get('idade'))
+print(pessoa.keys()) # dict_keys(['nome', 'idade', 'cursos'])
+print(pessoa.values()) # dict_values(['Ana', 38, ['Ingles', 'Portugues']])
+print(pessoa.get('idade')) # 38
 
 pessoa['idade'] = 44 # alterando o valor de uma chave
 pessoa['cursos'].append('Espanhol') # adicionado elementos
@@ -238,39 +245,40 @@ print('--------------------- Conjunto (Set) ----------------------')
 # Não tem uma ordenação, não é indexado, e não aceita repetição.
 
 a = {1, 2, 3}
-print(type(a)) # "set"
+print(type(a)) # <class 'set'>
+print(a) # {1, 2, 3}
 
 # a[0] # dá erro, não tem index
 
 a = set('Maisa')
-print(a) # não vem na ordem correta, SEM ORDENAÇÃO, e SEM REPETIÇÃO, veio apenas um 'a'.
+print(a) # {'s', 'i', 'a', 'M'} >> não vem na ordem correta, SEM ORDENAÇÃO, e SEM REPETIÇÃO, veio apenas um 'a'.
 
-print('M' in a, 5 not in a) # true, true
-print({1, 2, 3} == {3, 2, 1, 3}) # true
+print('M' in a, 5 not in a) # True, True
+print({1, 2, 3} == {3, 2, 1, 3}) # True
 
 # Operações de conjuntos
 
 c1 = {1, 2}
 c2 = {2, 3}
-print(c1.union(c2)) # cria um novo conjunto com a união dos 2
-print(c1.intersection(c2)) # cria um novo conjunto com a intersecção dos 2
+print('union:', c1.union(c2)) # {1, 2, 3} >> cria um novo conjunto com a união dos 2
+print('intersection:', c1.intersection(c2)) # {2} >> cria um novo conjunto com a intersecção dos 2
 
 c1.update(c2) # cria um novo conjunto usando o c2 para atualizar o c1
 print(c1) # {1, 2, 3}
 print(c2) # {2, 3}
 
-print(c2 <= c1) # true (c2 é subconjunto de c1), pq c2 = {2, 3} está contido em c1 = {1, 2, 3}
-print(c1 >= c2) # true (c1 é superconjunto de c2), pq c2 está contido em c1
+print(c2 <= c1) # True (c2 é subconjunto de c1), pq c2 = {2, 3} está contido em c1 = {1, 2, 3}
+print(c1 >= c2) # True (c1 é superconjunto de c2), pq c2 está contido em c1
 
-{1, 2, 3} - {2} # diferneça entre conjuntos, não existe a soma '+' entre 2 conjuntos.
-print(c1 - c2) # diferença também
+{1, 2, 3} - {2} # diferença entre conjuntos, não existe a soma '+' entre 2 conjuntos.
+print(c1 - c2) # {1} >> diferença também
 
 c1 -= {2} # diferença também
-print(c1)
+print(c1) # {1, 3}
 
 #%%------------------------------
-print('--------------------- Interpolacao ----------------------')
-# Interpolacao
+print('--------------------- Interpolação ----------------------')
+# Interpolação
 # Formas de interpolar strings.
 
 # Forma 1 - forma mais antiga e menos recomendada.

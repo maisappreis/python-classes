@@ -13,8 +13,10 @@ finally:
 
 
 if arquivo.closed:
-    print('Arquivo foi fechado!')  # mas se tiver erro no 'try', aquilo que vem abaixo do 'finally' não será executado, apenas ele próprio será.
-                                   # caso eu use o 'except IndexError: pass' abaixo do 'try', ai sim todo o resto continua sendo executado.
+    print('Arquivo foi fechado!')   # mas se tiver erro no 'try', aquilo que vem abaixo do 'finally' não será executado,
+                                    # apenas ele próprio será.
+                                    # caso eu use o 'except IndexError: pass' abaixo do 'try', ai sim todo o resto
+                                    # continua sendo executado.
 
 
 # Aqui precisa fechar o arquivo após usar ele. E não antes.

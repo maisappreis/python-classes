@@ -4,7 +4,7 @@ import csv
 from urllib import request
 
 def read(url):
-    with request.urlopen(url) as entrada: # ao inves de usar o arquivo .csv local, vamos pegar ele remotamente, pela URL.
+    with request.urlopen(url) as entrada: # ao invés de usar o arquivo .csv local, vamos pegar ele remotamente, pela URL.
         print('Baixando o CSV...')
         dados = entrada.read().decode('latin1') # alterando o encoding do arquivo. ISO 8859-1 e não UTF-8
         print('Download completo!')

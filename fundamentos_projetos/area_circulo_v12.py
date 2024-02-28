@@ -11,7 +11,7 @@ def circulo(raio):
     return pi * (float(raio) ** 2)
 
 
-if __name__ == '__main__':   
+if __name__ == '__main__':
     if len(sys.argv) < 2:
         help()
     else:
@@ -21,12 +21,9 @@ if __name__ == '__main__':
 
 
 # NO TERMINAL
-# dentro de '>cd fundamentos_projetos'
-# >python area_circulo_v12.py
+# > cd fundamentos_projetos
+# > python area_circulo_v12.py 15
 
-# ou
-# >python area_circulo_v12.py 15 (aqui informando a área do circulo)
-
-
-# sys.argv[0] é o nome do stript
-# sys.argv[1] é o raio
+# sys.argv = ['.\\fundamentos_projetos\\area_circulo_v12.py', '15']
+# sys.argv[0] = '.\\fundamentos_projetos\\area_circulo_v12.py'
+# sys.argv[1] = '15' (o raio)

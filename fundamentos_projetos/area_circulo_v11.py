@@ -18,8 +18,5 @@ if __name__ == '__main__':
 
 
 # NO TERMINAL
-# dentro de '>cd fundamentos_projetos'
-# >python area_circulo_v11.py
-
-# ou
-# >python area_circulo_v11.py 15 (aqui informando a área do circulo)
+# > cd fundamentos_projetos
+# > python area_circulo_v11.py <raio>

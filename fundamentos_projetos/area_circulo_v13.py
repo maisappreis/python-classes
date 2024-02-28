@@ -21,15 +21,3 @@ if __name__ == '__main__':
     raio = sys.argv[1] # acessando o argumento da posição 1, que é o raio.
     area = circulo(raio)
     print('Área do circulo:', area)
-
-
-# NO TERMINAL
-# dentro de '>cd fundamentos_projetos'
-# >python area_circulo_v13.py
-
-# ou
-# >python area_circulo_v13.py 15 (aqui informando a área do circulo)
-
-
-# sys.argv[0] é o nome do stript
-# sys.argv[1] é o raio

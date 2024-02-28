@@ -21,7 +21,7 @@ def help():
 def circulo(raio):
     return pi * (float(raio) ** 2)
 
-# sys.argv[0] é o nome do stript
+# sys.argv[0] é o nome do script
 # sys.argv[1] é o raio
 
 
@@ -43,9 +43,6 @@ if __name__ == '__main__':
 
 
 # NO TERMINAL
-# dentro de '>cd fundamentos_projetos'
-# >python area_circulo_v15.py
-
-# ou
-# >python area_circulo_v15.py abc (cai na validação)
-# >python area_circulo_v15.py 15 (aqui informando a área do circulo)
+# > cd fundamentos_projetos
+# > python area_circulo_v15.py abc (cai na validação)
+# > python area_circulo_v15.py 15 (aqui informando a área do circulo)

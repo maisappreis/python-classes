@@ -11,7 +11,4 @@ with open('pessoas.csv') as arquivo:
 
 
 if arquivo.closed:
-    print('Arquivo foi fechado!')  
-
-
-# Aqui precisa fechar o arquivo após usar ele, e não antes.
+    print('Arquivo foi fechado!')

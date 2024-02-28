@@ -1,6 +1,6 @@
  #! python
  
-# Usando um arquivo comma-separated values, valores separados por vírgula.
+# Usando um arquivo Comma Separated Values, valores separados por vírgula.
 # Nesse caso aqui, ele não precisa carregar o arquivo todo antes de proceguir, ele vai lendo o arquivo sob demanda.
 # Seria uma leitura 'striming', como o Youtube faz, ele não carrega todo o video para seu PC. Ele vai carregando aos poucos.
 # Isso economiza recurso de memória.
@@ -11,3 +11,4 @@ for registro in arquivo:
 arquivo.close()
 
 # Aqui precisa fechar o arquivo após usar ele. E não antes.
+# Sem o 'dados = arquivo.read()' não há o armazenamento dos dados dentro de uma variável.

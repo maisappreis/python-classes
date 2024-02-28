@@ -1,6 +1,7 @@
  #! python
  
 # Agora usando o 'with'. Aqui já fica garantido que o arquivo será fechado posterioramente.
+# Sendo desnecessário chamar o 'arquivo.close()'
 
 with open('pessoas.csv') as arquivo:
     for registro in arquivo:
@@ -8,7 +9,4 @@ with open('pessoas.csv') as arquivo:
 
 
 if arquivo.closed:
-    print('Arquivo foi fechado!')  
-
-
-# Aqui precisa fechar o arquivo após usar ele. E não antes.
+    print('Arquivo foi fechado!')
